@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EarnAndLearn</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#" style="text-transform: none; !important;">Logo Goes Here</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#" data-toggle="modal" data-target="#login-modal">Become a Tutor</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li class="dropdown">
+            <% if current_user.nil? %>
+                <a href="#" data-toggle="modal" data-target="#login-modal">Log In</a>
+            <% else %>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, <%= current_user.first_name %> <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/user_profile">User Profile<i class="fa fa-user fa-fw"></i></a>
+                    </li>
+                    <li><a href="#">Settings<i class="fa fa-gear fa-fw"></i></a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/logout">Log out</a></li>
+                  </ul>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- LOGIN MODAL -->
+
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Log In</h4>
+        </div>
+
+        <div class="modal-body">
+          <%= form_for :user, html: { multipart: true }, method: 'post', url: '/login' do |f| %>
+              <div class="input-group input-group-lg">
+                <%= text_field(:user, :email, class: 'form-control input-lg', placeholder: "Email") %>
+              </div>
+              <div class="form-group">
+                <%= text_field(:user, :password, class: 'form-control input-lg', placeholder: "Password", type: "password") %>
+              </div>
+              <%= f.submit "Log in", class: "btn btn-block signup-login-form__btn-xl btn-primary btn-large"%>
+          <% end %>
+        </div>
+        <div class="modal-footer">
+        <span class="signup-login-form__switch-copy" style="float: left">
+        Don't have an account?
+        </span>
+          <a href="#signup-modal" data-toggle="modal" data-target="#signup-modal" id="closeLogInModal" class="btn btn-default btn-primary btn-xl">
+            Sign Up
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sign up Modal -->
+
+
+
+
+  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+        </div>
+
+        <div class="modal-body">
+          <%= form_for :user, html: { multipart: true }, method: 'post', url: '/signup' do |f| %>
+              <div class="form-inline">
+                <%= text_field(:user, :first_name, class: 'form-control input-lg', placeholder: "First Name") %>
+                <%= text_field(:user, :last_name, class: 'form-control input-lg', placeholder: "Last Name") %>
+              </div>
+              <div class="input-group input-group-lg">
+                <%= text_field(:user, :email, class: 'form-control input-lg', placeholder: "Email") %>
+              </div>
+              <div class="form-group">
+                <%= text_field(:user, :password, class: 'form-control input-lg', placeholder: "Password", type: "password") %>
+              </div>
+              <div class="form-group">
+                <%= text_field(:user, :password_confirmation, class: 'form-control input-lg', placeholder: "Confirm Password", type: "password") %>
+              </div>
+              <%= f.submit "Sign Up", class: "btn btn-block signup-login-form__btn-xl btn-primary btn-large"%>
+
+              <div id="tos_outside" class="space-top-3">
+                <small>
+                  By signing up, I agree to our <a href="" data-popup="true">Terms of Service</a>, <a href="" data-popup="true">Payments Terms of Service</a>, <a href="" data-popup="true">Privacy Policy</a>, <a href="" data-popup="true">Guest Refund Policy</a>, and <a href="" data-popup="true">Host Guarantee Terms</a>.
+                </small>
+
+              </div>
+              </div>
+              <div class="modal-footer">
+        <span class="signup-login-form__switch-copy" style="float: left">
+        Already have an account?
+        </span>
+                <a href="#login-modal" data-toggle="modal" data-target="#login-modal" class="btn btn-default btn-primary btn-xl" id="closeSignUpModal">
+                  Log in
+                </a>
+              </div>
+          <% end %>
+          </div>
+    </div>
+  </div>
+
+  <script>
+    $('#closeLogInModal').click(function() {
+      $('#login-modal').modal('hide');
+    });
+
+    $('#closeSignUpModal').click(function() {
+      $('#signup-modal').modal('hide');
+    });
+
+
+  </script>
+
+  <%= yield %>
+  </body>
+</html>

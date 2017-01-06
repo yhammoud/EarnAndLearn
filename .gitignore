@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+config/initializers/app_env_vars.rb
+app/assets/javascripts/sessions.coffee
+app/assets/stylesheets/sessions.scss
+app/controllers/sessions_controller.rb
+app/helpers/sessions_helper.rb
+app/views/sessions/
+db/migrate/20170103222812_add_email_confirm_column_to_users.rb
+test/controllers/sessions_controller_test.rb
