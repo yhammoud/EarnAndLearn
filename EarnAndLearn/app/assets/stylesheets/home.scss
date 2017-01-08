@@ -79,4 +79,18 @@ header .header-content .header-content-inner p {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .form-inline .form-group {
+    width: 48% !important;
+  }
+
+  .left-group {
+    margin-right: 18px;
+  }
+
+  .form-inline .form-control {
+    width: 100%;
+
+  }
+
 }

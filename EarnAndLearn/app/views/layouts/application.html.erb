@@ -63,7 +63,7 @@
 
         <div class="modal-body">
           <%= form_for :user, html: { multipart: true }, method: 'post', url: '/login' do |f| %>
-              <div class="input-group input-group-lg">
+              <div class="form-group">
                 <%= text_field(:user, :email, class: 'form-control input-lg', placeholder: "Email") %>
               </div>
               <div class="form-group">
@@ -102,11 +102,17 @@
 
         <div class="modal-body">
           <%= form_for :user, html: { multipart: true }, method: 'post', url: '/signup' do |f| %>
-              <div class="form-inline">
-                <%= text_field(:user, :first_name, class: 'form-control input-lg', placeholder: "First Name") %>
-                <%= text_field(:user, :last_name, class: 'form-control input-lg', placeholder: "Last Name") %>
+              <div class="form-group">
+                <div class="form-inline">
+                  <div class="form-group left-group">
+                    <%= text_field(:user, :first_name, class: 'form-control input-lg', placeholder: "First Name") %>
+                  </div>
+                  <div class="form-group">
+                    <%= text_field(:user, :last_name, class: 'form-control input-lg', placeholder: "Last Name") %>
+                  </div>
+                </div>
               </div>
-              <div class="input-group input-group-lg">
+              <div class="form-group">
                 <%= text_field(:user, :email, class: 'form-control input-lg', placeholder: "Email") %>
               </div>
               <div class="form-group">
