@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="858f1b2a-7195-4384-a6db-c0105de77ca1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/EarnAndLearn/app/controllers/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/EarnAndLearn/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/app/mailers/user_mailer.rb" afterPath="$PROJECT_DIR$/EarnAndLearn/app/mailers/user_mailer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/app/models/user.rb" afterPath="$PROJECT_DIR$/EarnAndLearn/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/config/routes.rb" afterPath="$PROJECT_DIR$/EarnAndLearn/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/db/schema.rb" afterPath="$PROJECT_DIR$/EarnAndLearn/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LearnAndEarn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +26,8 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="195">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -471,12 +466,12 @@
       <workItem from="1482939856130" duration="10422000" />
       <workItem from="1483463477042" duration="18000" />
       <workItem from="1483482017388" duration="10275000" />
-      <workItem from="1483696700914" duration="6135000" />
+      <workItem from="1483696700914" duration="6618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26850000" />
+    <option name="totallyTimeSpent" value="27333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -906,8 +901,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="195">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding />
         </state>
       </provider>
