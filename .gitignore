@@ -7,3 +7,5 @@ app/helpers/sessions_helper.rb
 app/views/sessions/
 db/migrate/20170103222812_add_email_confirm_column_to_users.rb
 test/controllers/sessions_controller_test.rb
+.idea/workspace.xml
+
