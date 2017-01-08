@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:user][:email].downcase)
 
     # If the user exists AND the password entered is correct.
-    byebug
+
     if user && user.authenticate(params[:user][:password])
       if user.email_confirmed
         session[:user_id] = user.id

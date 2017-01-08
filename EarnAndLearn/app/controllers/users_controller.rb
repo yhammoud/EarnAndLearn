@@ -6,9 +6,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    byebug
+
     user = User.new(user_params)
-    if user.save
+    if user.save!
       UserMailer.signup_confirmation(user).deliver_later
       flash[:success] = 'A confirmation email has been sent to your email. Please follow the instruction in the email to log in.'
       redirect_to root_url
@@ -34,9 +34,7 @@ class UsersController < ApplicationController
 
 
   def user_params
-    user_modified_params =  params.require(:user).permit(:first_name, :last_name, :password, :password_confirmation)
-    email = params[:user][:email]
-    user_modified_params[:email] = email
+    user_modified_params =  params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
     return user_modified_params
   end
 
