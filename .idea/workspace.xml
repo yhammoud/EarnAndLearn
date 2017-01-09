@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="858f1b2a-7195-4384-a6db-c0105de77ca1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/app/assets/stylesheets/footer-distributed-with-address-and-phones.css" afterPath="$PROJECT_DIR$/EarnAndLearn/app/assets/stylesheets/footer-distributed-with-address-and-phones.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/app/assets/stylesheets/home.scss" afterPath="$PROJECT_DIR$/EarnAndLearn/app/assets/stylesheets/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/app/views/layouts/logged_in.erb" afterPath="$PROJECT_DIR$/EarnAndLearn/app/views/layouts/logged_in.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/app/views/home/new.erb" afterPath="$PROJECT_DIR$/EarnAndLearn/app/views/home/new.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EarnAndLearn/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/EarnAndLearn/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="LearnAndEarn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="75" column="73" selection-start-line="75" selection-start-column="73" selection-end-line="75" selection-end-column="73" />
+            <state relative-caret-position="600">
+              <caret line="40" column="38" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -86,17 +85,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/views/home/new.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="30">
+              <caret line="2" column="175" selection-start-line="2" selection-start-column="175" selection-end-line="2" selection-end-column="175" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/assets/stylesheets/home.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -109,8 +108,8 @@
       <file leaf-file-name="logged_in.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/views/layouts/logged_in.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="127">
+              <caret line="68" column="23" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,17 +162,17 @@
         <option value="$PROJECT_DIR$/EarnAndLearn/.gitignore" />
         <option value="$PROJECT_DIR$/EarnAndLearn/db/migrate/20170108225209_add_geocoder_to_user.rb" />
         <option value="$PROJECT_DIR$/EarnAndLearn/Gemfile" />
-        <option value="$PROJECT_DIR$/EarnAndLearn/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/EarnAndLearn/app/views/home/home.erb" />
         <option value="$PROJECT_DIR$/EarnAndLearn/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/EarnAndLearn/app/assets/javascripts/userLocation.js" />
         <option value="$PROJECT_DIR$/EarnAndLearn/config/routes.rb" />
         <option value="$PROJECT_DIR$/EarnAndLearn/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/EarnAndLearn/app/views/home/new.erb" />
         <option value="$PROJECT_DIR$/EarnAndLearn/app/models/user.rb" />
         <option value="$PROJECT_DIR$/EarnAndLearn/app/assets/stylesheets/footer-distributed-with-address-and-phones.css" />
         <option value="$PROJECT_DIR$/EarnAndLearn/app/views/layouts/logged_in.erb" />
         <option value="$PROJECT_DIR$/EarnAndLearn/app/assets/stylesheets/home.scss" />
+        <option value="$PROJECT_DIR$/EarnAndLearn/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/EarnAndLearn/app/views/home/new.erb" />
       </list>
     </option>
   </component>
@@ -692,12 +691,12 @@
       <workItem from="1482939856130" duration="10422000" />
       <workItem from="1483463477042" duration="18000" />
       <workItem from="1483482017388" duration="10275000" />
-      <workItem from="1483696700914" duration="21561000" />
+      <workItem from="1483696700914" duration="21951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42276000" />
+    <option name="totallyTimeSpent" value="42666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1039,14 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="75" column="73" selection-start-line="75" selection-start-column="73" selection-end-line="75" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/assets/javascripts/userLocation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1087,14 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/views/home/new.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1119,18 +1102,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/views/layouts/logged_in.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/assets/stylesheets/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="119" column="13" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/views/layouts/logged_in.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EarnAndLearn/app/views/home/new.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="175" selection-start-line="2" selection-start-column="175" selection-end-line="2" selection-end-column="175" />
           <folding />
         </state>
       </provider>
