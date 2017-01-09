@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-video {
+video, .map {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -69,6 +69,8 @@ header .header-content .header-content-inner p {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    background-color: gray;
+    opacity: 0.5;
   }
   header .header-content .header-content-inner h1 {
     font-size: 50px;

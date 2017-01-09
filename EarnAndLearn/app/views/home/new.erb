@@ -1,0 +1,39 @@
+<header>
+  <% if !current_user.nil? && !current_user.longitude.nil? && !current_user.latitude.nil?%>
+      <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{current_user.latitude}%2C#{current_user.longitude}", class: "map" %>
+  <% else %>
+    <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+      <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+      <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+      <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+    </video>
+  <% end %>
+  <div class="header-content">
+    <div class="header-content-inner">
+      <p id="homeHeading">Here you can learn anything. Just search what you want to learn and book a session with a pro now.</p>
+      <hr>
+      </div>
+  </div>
+  </div>
+
+</header>
+
+<script>
+  $(".home.new").ready(function(){
+      if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(function(position){
+          $.ajax({
+            type: "POST",
+            url: "/locations",
+            data: {user: {latitude: position.coords.latitude, longitude: position.coords.longitude}},
+            datatype: 'json',
+            success: function(data, textStatus, xhr){
+              if(xhr.status == 204) {
+                window.location.href = "/";
+              }
+            }
+          });
+        })
+      }
+  });
+</script>
