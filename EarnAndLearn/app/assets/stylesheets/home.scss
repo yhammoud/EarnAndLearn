@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-video {
+video, .map {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -34,6 +34,10 @@ header .header-content {
   text-align: center;
   padding: 100px 15px 100px;
   width: 100%;
+}
+header .header-content .header-content-inner {
+  background-color: gray;
+  opacity: 0.5;
 }
 header .header-content .header-content-inner h1 {
   font-weight: 700;
@@ -69,6 +73,8 @@ header .header-content .header-content-inner p {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    background-color: gray;
+    opacity: 0.5;
   }
   header .header-content .header-content-inner h1 {
     font-size: 50px;
@@ -93,4 +99,32 @@ header .header-content .header-content-inner p {
 
   }
 
+}
+.navbar-brand {
+  padding: 5px 15px;
+}
+
+.navbar-brand, h3 {
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.navbar-brand h3 span {
+  color: #F05F40;
+}
+
+.badge-notify{
+  background: #F05F40;;
+  position: relative;
+  top: -2px;
+  left: 30px;
+}
+
+.messages {
+  padding-top: 5px !important;
+  padding-bottom: 0 !important;
+  max-height: 0px;
+  font-size: 26px;
+  display: block;
+  margin: 0px;
 }
